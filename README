@@ -1,5 +1,12 @@
 #Remove L3 codes from FTI
 
+Quick start: 
+
+You need to download FTI first: https://github.com/leobago/fti
+Then, switch to this pacakge and set the local path of FTI in run.sh, and then execute run.sh. 
+
+Architecure:
+
 All the involved files include src/interface.h, src/postckpt.c, src/postreco.c and CMakeLists.txt
 
 1. src/interface.h: remove #include <jerasure.h> and #include <galois.h>
