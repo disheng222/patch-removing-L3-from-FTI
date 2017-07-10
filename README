@@ -1,0 +1,11 @@
+#Remove L3 codes from FTI
+
+All the involved files include src/interface.h, src/postckpt.c, src/postreco.c and CMakeLists.txt
+
+1. src/interface.h: remove #include <jerasure.h> and #include <galois.h>
+2. src/postckpt.c: set FTI_RSenc() to be empty. 
+3. src/postreco.c: set FTI_Decode() and FTI_RecoverL3() to be empty. 
+4. modify CMakeLists.txt.
+
+Note that in the config.fti , Ckpt_L3 should be set 0, indicating that level 3 would be ignored. 
+(I didn't change the checking of the users' input parameters to see if they still adopt level 3 or not, because L3 will actually be added back to FTI later. We remove it temporily because of the copyright issue.) 
