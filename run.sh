@@ -1,6 +1,7 @@
 #!/bin/bash
 
-ftiDir=/home/sdi/Development/FTI/fti
+#ftiDir=/home/sdi/Development/FTI/fti
+ftiDir=[please set your local path of FTI here]
 
 curDir=`pwd`
 
