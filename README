@@ -3,9 +3,10 @@
 Quick start: 
 
 You need to download FTI first: https://github.com/leobago/fti
-Then, switch to this pacakge and set the local path of FTI in run.sh, and then execute run.sh. 
+Then, switch to this pacakge and set the local path of FTI in run.sh (e.g, ftiDir=/home/sdi/Development/FTI/fti). 
+Finally, execute run.sh. Then, the L3-related codes will be removed. 
 
-Architecure:
+Architecture:
 
 All the involved files include src/interface.h, src/postckpt.c, src/postreco.c and CMakeLists.txt
 
@@ -15,4 +16,4 @@ All the involved files include src/interface.h, src/postckpt.c, src/postreco.c a
 4. modify CMakeLists.txt.
 
 Note that in the config.fti , Ckpt_L3 should be set 0, indicating that level 3 would be ignored. 
-(I didn't change the checking of the users' input parameters to see if they still adopt level 3 or not, because L3 will actually be added back to FTI later. We remove it temporily because of the copyright issue.) 
+(I didn't change the checking of the users' input parameters to see if they still adopt level 3 or not, because L3 will actually be added back to FTI later. We remove it temporily here because of the copyright issue.) 

@@ -16,3 +16,5 @@ do
 	echo patch -p0 < "$curDir/src/$file"
 	patch -p0 < "$curDir/src/$file"
 done
+
+rm -rf deps/jerasure
